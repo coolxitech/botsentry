@@ -41,13 +41,6 @@ class Api
         }
     }
 
-    public function test()
-    {
-        $yescaptcha = new Yescaptcha();
-        $token = $yescaptcha->verify();
-        return Response::json(0, '验证成功', ['token' => $token]);
-    }
-
     private function geetest(array $data): bool
     {
         $client = new Client();
