@@ -27,4 +27,10 @@ return [
     'error_message'    => '页面错误！请稍后再试～',
     // 显示错误信息
     'show_error_msg'   => false,
+    // 服务器名称
+    'server_name'      => env('SERVER_NAME', ''),
+    // 人机验证:[google:官方reCaptcha,geetest:极验,aliyun:阿里云验证码]
+    'captcha'          => env('CAPTCHA', 'google'),
+    // 打码识别[Yescaptcha],用于官方接口的二次识别，有更好的请提交Issue
+    'crack' => env('CRACK', 'Yescaptcha'),
 ];
