@@ -8,7 +8,7 @@ BotSentry for China
 
 * 基于PHP`8.4+`开发
 
-> ThinkPHP8的运行环境要求PHP8.4+
+> 运行环境要求PHP8.4+
 
 ## 文档
 
@@ -41,6 +41,13 @@ http://localhost:8000
 ~~~
 composer update coolxitech/botsentry
 ~~~
+
+## 使用
+
+需要注册[YesCaptcha](https://yescaptcha.com/i/AuTgRK)的账号并充值,用于二次验证提交数据.
+
+在config/captcha.php中配置你想用的验证码，相关配置需要自行搜索.
+在config/crack.php中配置YesCaptcha的密钥.
 
 ## 命名规范
 
