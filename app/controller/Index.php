@@ -29,7 +29,7 @@ class Index extends BaseController
             ],
         ]);
         View::assign('serverName', $serverName);
-         View::assign('ip', env('APP_DEBUG') ? $this->getIp() : $this->request->ip()); // 测试环境从服务端获取IP，线上环境获取客户端IP
+        View::assign('ip', env('APP_DEBUG') ? $this->getIp() : $this->request->ip()); // 测试环境从服务端获取IP，线上环境获取客户端IP
         return View::fetch();
     }
 
